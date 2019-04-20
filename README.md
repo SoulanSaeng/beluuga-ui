@@ -5,7 +5,8 @@
 - `npm run serve`
 
 ## Build for production
-- TODO
+- Using Docker `docker build . -t beluuga-ui:latest`
+- Using Docker `docker run -it --rm --name beluuga-ui -p 8081:80 beluuga-ui:latest`
 
 ## Environment Variables
 - VUE_APP_API_URL  `The URI of the Beluuga-API`
