@@ -1,0 +1,12 @@
+export const GET_RIDES = 'getRides';
+export const SET_RIDES = 'setRides';
+export const SHOW_MAPS = 'showMaps';
+export const LOGIN = 'login';
+export const LOGOUT = 'logout';
+export const REGISTER = 'register';
+export const UPDATE_USER = 'refresh';
+export const CHECK_AUTH = 'checkAuth';
+export const RESET_PWD = 'resetPwd';
+export const CONFIRM_PWD = 'confirmPwd';
+export const GET_USER = 'getUser';
+export const UPDATE_AUTH = 'updateAuth';
