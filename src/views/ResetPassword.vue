@@ -62,7 +62,7 @@ export default {
           })
           .then(() => {
               this.success.push(SUCCESS_MSG);
-              this.$router.push({ path: "/login" });
+              this.$router.push({ name: "login" });
           })
           .catch(err => {
             this.errors.push(err.data.message);

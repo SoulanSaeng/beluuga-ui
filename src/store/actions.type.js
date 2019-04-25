@@ -10,3 +10,4 @@ export const RESET_PWD = 'resetPwd';
 export const CONFIRM_PWD = 'confirmPwd';
 export const GET_USER = 'getUser';
 export const UPDATE_AUTH = 'updateAuth';
+export const CONFIRM_USER = 'confirmUser';

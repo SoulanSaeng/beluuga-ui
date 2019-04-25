@@ -5,6 +5,8 @@ import DriverRegistration from '@/views/DriverRegistration'
 import Login from '@/views/Login'
 import Recovery from '@/views/Recovery'
 import ResetPassword from '@/views/ResetPassword'
+import RegistrationSuccessful from '@/views/RegistrationSuccessful'
+import UserConfirmation from '@/views/UserConfirmation'
 
 export default [{
         path: '/search',
@@ -43,5 +45,15 @@ export default [{
         path: '/recovery/reset',
         name: 'reset-password',
         component: ResetPassword,
+    },
+    {
+        path: '/register/success',
+        name: 'registration-successful',
+        component: RegistrationSuccessful,
+    },
+    {
+        path: '/user/confirmation',
+        name: 'user-confirmation',
+        component: UserConfirmation,
     },
 ]

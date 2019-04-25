@@ -10,6 +10,7 @@ import {
     CONFIRM_PWD,
     RESET_PWD,
     UPDATE_AUTH,
+    CONFIRM_USER
 } from './actions.type'
 
 import {
@@ -17,7 +18,6 @@ import {
     PURGE_AUTH,
     SET_ERROR,
     SET_USER
-
 } from './mutations.type'
 
 
@@ -37,6 +37,14 @@ const getters = {
 };
 
 const actions = {
+    async [CONFIRM_USER](context, payload){
+        try {
+            let response = await AuthService.confirmUser(payload);
+            return response;
+        } catch (err) {
+            throw err.response;
+        }
+    },
     async [UPDATE_AUTH](context, token){
         try {
             context.commit(SET_AUTH, token);

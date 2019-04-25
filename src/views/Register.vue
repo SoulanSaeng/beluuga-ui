@@ -57,7 +57,7 @@
 
 <script>
 import Header from "@/components/Layouts/Header";
-import { REGISTER, LOGIN } from "@/store/actions.type";
+import { REGISTER } from "@/store/actions.type";
 import FormAlert from "@/components/Forms/FormAlert";
 import Password from "@/components/Forms/Password";
 import Email from "@/components/Forms/Email";
@@ -97,18 +97,13 @@ export default {
           email: this.email,
           password: this.password,
           f_name: this.f_name,
-          l_name: this.l_name
+          l_name: this.l_name,
+          roles : ["driver"]
         };
         this.$store
           .dispatch(REGISTER, registration)
           .then(() => {
-            return this.$store.dispatch(LOGIN, {
-              email: this.email,
-              password: this.password
-            });
-          })
-          .then(() => {
-            this.$router.push({ name: "home" });
+            this.$router.push({ name: "registration-successful" });
           })
           .catch(err => this.errors.push(err.data.message));
       }

@@ -16,7 +16,7 @@
               <FormAlert :errors="success" level="success"></FormAlert>
               <Email @email="email = $event"></Email>
             </div>
-            <button class="btn btn-info btn-block shadow-sm" v-on:click="reset">Reset</button>
+            <button type="button" class="btn btn-info btn-block shadow-sm" v-on:click="reset">Reset</button>
           </form>
         </div>
       </div>

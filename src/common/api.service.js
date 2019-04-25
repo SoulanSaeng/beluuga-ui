@@ -79,7 +79,9 @@ export const AuthService = {
   confirmPwd(payload) {
     return API.post('user/password', payload);
   },
-
+  confirmUser(payload) {
+    return API.post('user/confirm', payload);
+  },
   setAuth() {
     API.setAuthHeader();
   },
